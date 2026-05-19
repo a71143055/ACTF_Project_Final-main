@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "actf_project"
+version = "0.1.0"
+description = "ACTF (Android Cyborg Transformers) CAD generator"
+dependencies = [
+    "cadquery==2.5.2",
+    "numpy==1.26.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
